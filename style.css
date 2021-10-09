@@ -1,11 +1,18 @@
-html{
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+  body{
   background-color: white;
   color: #424242;
   font-family: Arial, sans-serif;
-  
+  width: 85%;
+  margin: auto;
 }
 
-main{
+.container{
   background-color: #E0E0E0;
   margin: 20px 2px 20px 2px;
   border-radius: 8px;
@@ -13,13 +20,27 @@ main{
 
 h1{
   text-align: center;
-  font-size: 40px;
-  padding: 40px 0px 0px 20px;
+  font-size: 1.8rem;
+  padding: 20px 0px 10px 0px;
 }
 
-#man{
+@media (min-width: 768px){
+  h1{
+    font-size: 2.8rem;
+    padding: 20px 0px 10px 0px;
+  }
+}
+
+p{
   text-align: center;
   font-size: 16px;
+  padding: 1rem 0;
+}
+
+@media (min-width: 768px){
+  p{
+    font-size: 1.1rem;
+  }
 }
 
 figure{
@@ -28,16 +49,17 @@ figure{
   margin: 15px;
 }
 
-#img{
-  padding-bottom: 5px;
-  width: 100%; 
-  max-width: 1000px; 
+img{
+  display: block;
+  margin: auto;
+  max-width: 100%; 
   height: auto; 
 }
 
 figcaption{
-  padding: 20px;
+  padding: 10px;
   font-size: 16.3px;
+  background-color: #E0E0E0;
 }
 
 h3{
@@ -55,10 +77,17 @@ li{
   margin-bottom: 15px;
 }
 
-blockquote{
-  max-width: 550px;
-  margin: auto;
-  line-height: 20px;
+@media (min-width: 768px){
+  li{
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px){
+  blockquote{
+    max-width: 550px;
+    margin: auto;
+    line-height: 20px;
 }
 
 footer{
